@@ -1,0 +1,65 @@
+/* FONT FAMILY */
+
+@font-face {
+    font-family: "Ralway";
+    src: url("assets/fonts/Raleway/static/Raleway-Regular.ttf") format("ttf")
+   }
+
+/* MAIN CSS */
+body{
+    max-width: 992px;
+    margin: 0 auto;
+    justify-content: space-around;
+    font-family: 'Ralway', Arial, sans-serif;;
+}
+
+.flex-container{
+    display: flex;
+}
+
+/* reset css */
+ul{
+    padding: 0;
+    margin: 0;
+}
+
+/* HEADER CSS */
+
+header{
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#header-logo{
+    width: 20%;
+    margin-left: 10px;
+}
+
+.main-nav{
+    width: 30%;
+}
+
+.main-nav-list{
+    width: 100%;
+    list-style: none;
+    justify-content: center;
+}
+
+.main-nav-list-item{
+    width: 50%;
+    display: flex;
+    text-align: center;
+}
+
+.main-nav-link{
+    color:lightgrey;
+    line-height: 6;
+    width: 100%;
+    text-decoration: none;
+}
+
+.main-nav-link:hover {
+    color: #0065FC;
+    border-top: solid 2px #0065FC ;
+}
