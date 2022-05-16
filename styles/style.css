@@ -5,35 +5,46 @@
     src: url("assets/fonts/Raleway/static/Raleway-Regular.ttf") format("ttf")
    }
 
-/* MAIN CSS */
-body{
-    max-width: 992px;
-    margin: 0 auto;
-    justify-content: space-around;
-    font-family: 'Ralway', Arial, sans-serif;;
+/* GLOBAL CSS */
+
+*, *:before, *:after{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
 }
 
-.flex-container{
-    display: flex;
-}
-
-/* reset css */
 ul{
     padding: 0;
     margin: 0;
+}
+
+body{
+    margin: 0 auto;
+    max-width: 992px;
+    display: flex;
+    justify-content: center;
+    font-family: 'Ralway', Arial, sans-serif;
+}
+
+
+/* GLOBAL CSS CLASS */
+
+.flex-container{
+    display: flex;
 }
 
 /* HEADER CSS */
 
 header{
     width: 100%;
+    display: flex;
     justify-content: space-between;
-    align-items: center;
 }
 
-#header-logo{
-    width: 20%;
-    margin-left: 10px;
+
+
+#header-logo img{
+    scale: 0.7;
 }
 
 .main-nav{
@@ -54,7 +65,7 @@ header{
 
 .main-nav-link{
     color:lightgrey;
-    line-height: 6;
+    line-height:8.5;
     width: 100%;
     text-decoration: none;
 }
@@ -62,4 +73,57 @@ header{
 .main-nav-link:hover {
     color: #0065FC;
     border-top: solid 2px #0065FC ;
+}
+
+/* RESPONSIVE */
+
+/* TABLETTES */
+@media screen and (max-width: 992px)
+{
+    
+}
+
+/* TELEPHONE */
+@media screen and (max-width: 768px)
+{
+    /* header css*/ 
+
+    header{
+        width: 100%;
+        flex-wrap: wrap;
+    }
+
+    #header-logo{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    #header-logo a{
+        width: 50%;
+        display: flex;
+        justify-content: center;
+    }
+
+    #header-logo img{
+        width: 60%;
+    }
+    
+    .main-nav{
+        width: 100%;
+    }
+
+    .main-nav-link{
+        line-height:3;
+    }
+
+    .main-nav-link:hover,
+    .main-nav-link:focus  {
+        color: #0065FC;
+        border-top: none;
+        border-bottom: solid 2px #0065FC ;
+    }
+
+    
+
 }
