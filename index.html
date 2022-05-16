@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="styles/style.css">
     
     <!-- ICONS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/fontawesome.min.css" integrity="sha384-zIaWifL2YFF1qaDiAo0JFgsmasocJ/rqu7LKYH8CoBEXqGbb9eO+Xi3s6fQhgFWM" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/62392c68e9.js" crossorigin="anonymous"></script>
 
 </head>
 <body>
@@ -38,23 +38,39 @@
   </header>
   <main>
     <section id="search">
-
-      <h1 class="main-title">Trouvez votre hébergement pour des vacances de rêve</h1>
-      <p>En plein centre ville ou en pleine nature</p>
-
-      <form action="" method="get">
-        <label for="search">icon</label>
-        <input type="search" name="search">
-        <button type="submit">Rechercher</button>
-      </form>
-
-      <div>
+      <div class="flex-container">
+        <h1 class="search-main-title">Trouvez votre hébergement pour des vacances de rêve</h1>
+        <p class="search-secondary-title">En plein centre ville ou en pleine nature</p>
+      </div>
+      
+      <div class="flex-container search-container">
+        <form action="" method="get">
+          <label for="search">
+            <i class="fa-solid fa-location-dot"></i>
+          </label>
+          <input type="search" name="search" placeholder=" Marseille, France"><button type="submit">Rechercher</button>
+        </form>
+      </div>
+          
+      <div class="flex-container filter-container">
         <h2>Filtres</h2>
-        <ul>
-          <li class="filtre">économique</li>
-          <li class="filtre">Familial</li>
-          <li class="filtre">Romantique</li>
-          <li class="filtre">Animaux autorisés</li>
+        <ul class="flex-container">
+          <li class="filter">
+            <i class="fa-solid fa-money-bill-wave"></i>
+            économique
+          </li>
+          <li class="filter">
+            <i class="fa-solid fa-heart"></i>
+            Familial
+          </li>
+          <li class="filter">
+            <i class="fa-solid fa-child-reaching"></i>
+            Romantique
+          </li>
+          <li class="filter">
+            <i class="fa-solid fa-dog"></i>
+            Animaux autorisés
+          </li>
         </ul>
       </div>
       
