@@ -46,6 +46,9 @@ body{
     flex-wrap: wrap;
 }
 
+.uppercase{
+    text-transform: uppercase;
+}
 /* HEADER CSS */
 
 header{
@@ -97,65 +100,60 @@ header{
 /* MAIN SECTION CSS*/
 
 /* SEARCH SECTION */ 
-#search{
+.search{
     display: flex;
     justify-content: flex-start;
     flex-wrap: wrap;
-}
-
-#search div{
-    width:100%;
+    margin: 20px;
 }
 
 .search-main-title{
-    padding: 10px 0;
+    padding: 5px 0 ;
     width: 100%;
     font-size: 1.5em;
 }
 
 .search-secondary-title{
-    padding:10px 0;
+    padding:0 0 10px 0;
     width: 100%;
     font-size: 1.1em;
 }
 
-.search-container{
-    margin: 20px 0;
-    border-radius: 5px;
+.search .search-container{
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+    border: solid grey 1px;
+    border-radius: 15px;
+    margin: 15px 0;
+    
 }
 
 .search-container label{
-    padding: 15px 15px 15px 20px;
-    border: solid #efefef 1px;
-    border-radius: 10px 0 0 10px;
-    background-color: #efefef;
+    padding: 21px;
+    background-color: grey;
 }
 
 .search-container input{
-    padding: 15px 0;
-    border: solid #efefef 1px;
-    background-image:none;
-    background-color:transparent;
-    -webkit-box-shadow: none;
-    -moz-box-shadow: none;
-    box-shadow: none;
+    padding: 15px;
+    border: none;
+    font-weight: bold;
 }
+
 
 .search-container button{
-    padding: 15px 15px 15px 20px;
-    border: solid #efefef 1px;
-    border-radius:0 10px 10px 0;
-    background-color: #0065FC;
+    padding: 20px;
+    color: white;
     font-weight: bold;
-    color: #fff;
+    background-color: #0065FC;
 }
 
-.search-container button:hover,
-.search-container button:focus{
-    cursor: pointer;
+.search .search-icon{
+    display:none;
 }
 
 .filter-container {
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
@@ -164,35 +162,36 @@ header{
 }
 
 .filter-container h2{
- font-size: 1.1em ;
- width: 15%;
+    font-size: 1.1em ;
+    width: 10%;
 }
 
 .filter-list{
-    width: 85%;
+    width: 90%;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: space-between;
     list-style-type: none;
 }
 
 .filter {
     display: flex;
-    justify-content: start;
     align-items: center;
-    width:20%;
-    border:solid #efefef 1px;
+    border:solid grey 2px;
     border-radius: 50px;
 }
 
-.filter a{
-    display:flex;
-    justify-content: flex-start;
+.filter div{
+    display: flex;
     align-items: center;
-    text-decoration: none;
-    width:25%;
     font-weight: bold;
 }
+
+.filter a{
+    text-decoration: none;
+    padding: 0 10px 0 0;
+}
+
 .filter a:visited{
     color: black;
 }
@@ -205,19 +204,56 @@ header{
     color: #0065FC;
 }
 
+.information{
+    display: flex;
+    justify-content: flex-start;
+    font-size: 1.5;
+    align-items: center;
+}
+
+.information i{
+    margin-right:10px ;
+    color: #0065FC;
+}
+
 /* RESPONSIVE */
 
 /* TABLETTES */
 @media screen and (max-width: 992px)
 {
+    /* search section */
+
+    .search-icon{
+        display:none;
+    }
+
+    .filter-container h2{
+        font-size: 1.1em ;
+        width: 100%;
+        padding: 10px 0 20px 0;
+    }
+
+    .filter-container {
+        align-content: flex-start;
+        margin-bottom: 20px;
+    }
+
+    .filter-list{
+        width: 100%;
+        justify-content: flex-start;
+    }
+
+    .filter{
+        margin: 5px;
+    }
     
 }
+
 
 /* TELEPHONE */
 @media screen and (max-width: 768px)
 {
     /* header css*/ 
-
     header{
         width: 100%;
         flex-wrap: wrap;
@@ -252,5 +288,26 @@ header{
         color: #0065FC;
         border-top: none;
         border-bottom: solid 2px #0065FC ;
+    }
+
+    /* search section */
+    .search {
+        justify-content: center;
+    }
+
+    .search-container input{
+        padding: 15px 25px;
+    }
+
+    .search-container button{
+        border-radius: 10px 0 0 10px;
+    }
+
+    .search .search-icon{
+        display:block;
+    }
+
+    .hidden{
+        display: none;
     }
 }
