@@ -5,6 +5,8 @@
     src: url("assets/fonts/Raleway/static/Raleway-Regular.ttf") format("ttf")
    }
 
+/* END FONT FAMILY */
+
 /* GLOBAL CSS */
 
 *, *:before, *:after{
@@ -23,11 +25,12 @@ body{
     max-width: 992px;
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     font-family: 'Ralway', Arial, sans-serif;
 }
 
 
-/* GLOBAL CSS CLASS */
+/* GLOBAL CLASS */
 
 .flex-container{
     display: flex;
@@ -41,10 +44,13 @@ header{
     justify-content: space-between;
 }
 
-
+#header-logo a{
+    display: flex;
+    justify-content: center;
+}
 
 #header-logo img{
-    scale: 0.7;
+    scale: 0.4;
 }
 
 .main-nav{
@@ -74,6 +80,15 @@ header{
     color: #0065FC;
     border-top: solid 2px #0065FC ;
 }
+
+/* MAIN SECTION CSS*/
+
+/* SEARCH SECTION */ 
+
+
+
+
+
 
 /* RESPONSIVE */
 
@@ -123,7 +138,4 @@ header{
         border-top: none;
         border-bottom: solid 2px #0065FC ;
     }
-
-    
-
 }
