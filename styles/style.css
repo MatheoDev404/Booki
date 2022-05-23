@@ -39,6 +39,10 @@ body{
 .uppercase{
     text-transform: uppercase;
 }
+
+.bold{
+    font-weight: bold;
+}
 /* HEADER CSS */
 
 header{
@@ -85,7 +89,7 @@ main{
 
 /* SEARCH SECTION */ 
 
-.search{
+#search{
     display: flex;
     justify-content: flex-start;
     flex-wrap: wrap;
@@ -190,6 +194,104 @@ main{
     border-radius: 50px;
 }
 
+/* HEBERGEMENT */
+
+#hebergement{
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.hebergement-ville{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    border-radius: 25px;
+    background-color: #f2f2f2;
+    width: 65%;
+    padding: 30px 30px 0 30px;
+}
+
+.hebergement-ville h2{
+    width: 100%;
+    padding: 0 0 30px 0;
+}
+
+.hebergement-card {
+    width: 31%; 
+    padding: 5px;
+    margin-bottom: 30px;
+    background-color: white; 
+    border-radius: 25px;
+    box-shadow: 0px 5px 20px #999; 
+}
+
+.hebergement-card a { 
+    color: black; 
+    text-decoration: none;
+}
+
+.hebergement-card:hover{ 
+    box-shadow: 5px 15px 15px grey; 
+}
+
+
+.hebergement-card-image{
+    height: 150px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 20px 20px 0 0;
+}
+
+.hebergement-card-image img{
+    width: 150%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition-property: filter width; 
+    transition-duration: .3s;
+    transition-timing-function: ease;
+}
+
+.hebergement-card-body {
+    box-sizing: border-box;
+    padding: 15px;
+}
+
+.hebergement-card-body h3{
+    box-sizing: border-box;
+    padding-bottom: 10px;
+}
+
+.hebergement-card-body p{
+    padding-bottom: 10px;
+}
+
+.note{
+    display: flex;
+}
+
+.blue-star{
+    color: #0065FC;
+}
+.grey-star{
+    color: #f2f2f2;
+}
+
+.more {
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.3rem;
+    padding-bottom: 30px;
+}
+
+.more:visited {
+    color:black;
+}
+
+
+
 /* RESPONSIVE */
 
 /* TABLETTES */
@@ -259,7 +361,7 @@ main{
 
     /* SEARCH SECTION */ 
 
-    .search {
+    #search{
         justify-content: center;
     }
 
