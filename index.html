@@ -11,8 +11,7 @@
     <link rel="stylesheet" href="styles/style.css">
     
     <!-- ICONS -->
-    <script src="https://kit.fontawesome.com/62392c68e9.js" crossorigin="anonymous"></script>
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
   <header>
@@ -21,73 +20,53 @@
       <a href="#"><img src="assets\images\logo\Booki@3x.png" alt="logo du site"></a>
     </div>
 
-    <nav class="main-nav">
-      <ul class="main-nav-list flex-container">
-          <li class="main-nav-list-item">
-            <a href="#" class="main-nav-link">
-              Hébergement
-            </a>
+    <nav id="main-nav">
+      <ul class="flex-container">
+          <li>
+            <a href="#">Hébergement</a>
           </li>
-          <li class="main-nav-list-item">
-            <a href="#" class="main-nav-link">
-              Activités
-            </a>
+          <li>
+            <a href="#">Activités</a>
           </li>
       </ul>
     </nav>
+
   </header>
   <main>
-    <section class="search">
-      <div class="flex-container">
-        <h1 class="search-main-title">Trouvez votre hébergement pour des vacances de rêve</h1>
-        <p class="search-secondary-title">En plein centre ville ou en pleine nature</p>
-      </div>
-      
-      <div class="search-container">
-        <form action="" method="get">
-          <label for="search"><i class="fa-solid fa-location-dot"></i></label>
-          <input type="search" name="search" placeholder="Marseille, France">
-          <button type="submit">
-            <i class="fa-solid fa-magnifying-glass search-icon"></i>
-            <span class="hidden">Rechercher</span>
-          </button>
-        </form>
-      </div>
+    <h1 class="search-main-title">Trouvez votre hébergement pour des vacances de rêve</h1>
+    <p class="search-secondary-title">En plein centre ville ou en pleine nature</p>
+
+    <section class="search">  
+
+      <form action="" method="get" class="search-container" >
+        <label for="search"><i class="fa-solid fa-location-dot"></i></label>
+        <input type="search" name="search" placeholder="Marseille, France">
+        <button type="submit">
+          <i class="fa-solid fa-magnifying-glass search-icon"></i>
+          <span class="hidden">Rechercher</span>
+        </button>
+      </form>
           
       <div class="filter-container">
         <h2>Filtres</h2>
         <ul class="filter-list">
           <li class="filter">
-            <div>
-              <i class="fa-solid fa-money-bill-wave"></i>
-              <a href="#">
-                <span class="uppercase">é</span>conomique
-              </a>
-            </div>
+            <i class="fa-solid fa-money-bill-wave"></i>
+            <a href="#">
+              <span class="uppercase">é</span>conomique
+            </a>
           </li>
           <li class="filter">
-            <div>
-              <i class="fa-solid fa-child-reaching"></i>
-              <a href="#">
-                Familial
-              </a>
-            </div>
+            <i class="fa-solid fa-child-reaching"></i>
+            <a href="#">Familial</a>
           </li>
           <li class="filter">
-            <div>
-              <i class="fa-solid fa-heart"></i>
-              <a href="#">
-                Romantique
-              </a>
-            </div>
+            <i class="fa-solid fa-heart"></i>
+            <a href="#">Romantique</a>
           </li>
           <li class="filter">
-            <div>
-              <i class="fa-solid fa-dog"></i>
-              <a href="#">
-                Animaux autorisés
-              </a>
-            </div>
+            <i class="fa-solid fa-dog"></i>
+            <a href="#">Animaux autorisés</a>
           </li>
         </ul>
       </div>
@@ -96,13 +75,10 @@
         <i class="fa-solid fa-circle-info"></i>
         <p>Plus de 500 logements sont disponbles dans cette ville</p>
       </div>
+      
     </section>
-
-
   </main>
   <footer>
-
-
   </footer>
 </body>
 </html>
