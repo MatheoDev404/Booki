@@ -25,14 +25,27 @@ h1,h2,h3,h4,h5,p,input,ul{
     margin: 0;
 }
 
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+a:visited{
+    color: black;
+}
+
 body{
     margin: 0 auto;
-    padding: 0 2%;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     font-family: 'Ralway', Arial, sans-serif;
+    font-size: 14px ;
 }
+
+
 
 /* GLOBAL CSS CLASS */
 
@@ -47,6 +60,7 @@ body{
 /* HEADER CSS */
 
 header{
+    padding: 0 2%;
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -91,6 +105,7 @@ main{
 /* SEARCH SECTION */ 
 
 #search{
+    padding: 0 2%;
     display: flex;
     justify-content: flex-start;
     flex-wrap: wrap;
@@ -197,7 +212,7 @@ main{
 /* HEBERGEMENT */
 
 #hebergement{
-    padding-top: 20px;
+    padding: 20px 2% 0 0;
     display: flex;
     justify-content: space-between;
 }
@@ -327,6 +342,114 @@ main{
     bottom: 10px;
 }
 
+/* ACTIVITY */
+
+#activity {
+    padding: 0 2%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-top: 30px;
+}
+
+#activity h2 {
+    width: 100%;
+    margin-bottom: 30px;
+    padding-left: 30px;
+}
+
+.activity-card {
+    width: 22%;
+    height: 400px;
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 25px;
+    overflow: hidden;
+}
+
+.activity-card img{
+    width: 100%;
+    height: 85%;
+    object-fit: cover;
+}
+
+.activity-card h3{
+    box-sizing: border-box;
+    padding: 20px;
+}
+
+.activity-card:hover{ 
+    box-shadow: 5px 15px 15px grey; 
+    cursor: pointer;
+}
+
+.card-container1, 
+.card-container2{
+    width: 22%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    height: 400px;
+}
+
+.card-container1  .activity-card,
+.card-container2  .activity-card{
+    width: 100%;
+}
+
+/* premier conteneur double echelle 6/4 */
+.card-container1 .activity-card:first-child{
+    flex: 6;
+    margin-bottom:20px ;
+}
+.card-container1 .activity-card:first-child img{
+    height: 72%;
+    object-position: 50% 35%;
+}
+
+.card-container1  .activity-card:last-child{
+    flex: 4;
+}
+.card-container1 .activity-card:last-child img{
+    height: 62%;
+    object-position: 50% 30%;
+}
+
+
+/* deuxieme conteneur double echelle 5/5 */
+.card-container2 .activity-card:first-child{
+    flex: 5;
+    margin-bottom:20px ;
+
+}
+.card-container2  .activity-card:last-child{
+    flex: 5;
+}
+.card-container2 .activity-card img{
+    object-position: 50% 25%;
+    height:70%;
+}
+
+/* FOOTER */
+footer{
+    width: 100%;
+    display:flex;
+    background-color: #f2f2f2;
+    padding: 20px;
+    line-height: 2em;
+}
+
+footer h2 {
+    line-height: 3em;
+}
+
+.footer-about,
+.footer-hebergement,
+.footer-assistance {
+    width:33%;
+    margin-left: 30px;
+}
+
 /* RESPONSIVE */
 
 /* TABLETTES */
@@ -377,6 +500,60 @@ main{
     .populaire{
         width: 100%;
     }
+
+    /* ACTIVITE */
+
+    .activity-card {
+        width: 33%;
+        height: 300px;
+        margin-bottom: 20px;
+    }
+    .activity-card img {
+        height: 80%;
+    }
+
+    .card-container1, 
+    .card-container2{
+        width: 67%;
+        justify-content: space-between;
+        flex-direction:row;
+        height: 300px;
+        padding-left: 20px;
+    }
+
+    .card-container1 .activity-card{
+        width: 49%;
+    }
+
+    /* premier conteneur double echelle 6/4 */
+    .card-container1 .activity-card:first-child{
+        flex: 5;
+        margin:0 20px 0 0;
+    }
+
+    .card-container1 .activity-card:first-child img{
+        height: 80%;
+        object-position: 50% 45%;
+    }
+
+    .card-container1  .activity-card:last-child{
+        flex: 5;
+    }
+
+    .card-container1 .activity-card:last-child img{
+        height: 80%;
+        object-position: 50% 30%;
+    }
+
+    /* deuxieme conteneur double echelle 5/5 */
+    .card-container2 .activity-card:first-child{
+        margin:0 20px 0 0;
+    }
+
+    .card-container2 .activity-card img{
+        height:80%;
+    }
+
 }
 
 /* MOBILE */
@@ -447,4 +624,59 @@ main{
     .populaire{
         border-radius: 0;
     }
+
+    /* ACTIVITE */
+
+    #activity {
+        padding: 0 25px;
+    }
+
+    .activity-card {
+        width: 100%;
+        height: 300px;
+    }
+
+    .card-container1, 
+    .card-container2{
+        width: 100%;
+        justify-content: space-between;
+        flex-direction:column;
+        flex-wrap: wrap;
+        height: 600px;
+        padding-left: 0;
+    }
+
+    /* premier conteneur double echelle 6/4 */
+    .card-container1 .activity-card:first-child{
+        width:100%;
+        margin:0;
+    }
+
+    .card-container1 .activity-card:first-child img{
+        object-position: 50% 50%;
+    }
+
+    .card-container1  .activity-card:last-child{
+        width:100%;
+    }
+
+    /* deuxieme conteneur double echelle 5/5 */
+    .card-container2 .activity-card img{
+        height:80%;
+    }
+
+    /* FOOTER */
+
+    footer{
+        justify-content: center;
+        flex-wrap: wrap;
+
+    }
+
+    .footer-about,
+    .footer-hebergement,
+    .footer-assistance {
+        width:100%;
+    }
+       
 }
