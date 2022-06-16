@@ -8,6 +8,9 @@
 /* END FONT FAMILY */
 
 /* GLOBAL CSS */
+html {
+    font-size: 14px;
+}
 
 *, *:before, *:after{
     -webkit-box-sizing: border-box;
@@ -31,9 +34,11 @@ ul{
 
 a{
     text-decoration: none;
+    color: #000;
 }
+
 a:visited{
-    color: black;
+    color: #000;
 }
 
 body{
@@ -42,7 +47,6 @@ body{
     justify-content: center;
     flex-wrap: wrap;
     font-family: 'Ralway', Arial, sans-serif;
-    font-size: 14px ;
 }
 
 /* GLOBAL CSS CLASS */
