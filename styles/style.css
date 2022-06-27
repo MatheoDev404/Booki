@@ -1,14 +1,12 @@
 /* FONT FAMILY */
 
-@font-face {
-    font-family: "Ralway";
-    src: url("assets/fonts/Raleway/static/Raleway-Regular.ttf") format("ttf")
-   }
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;500&display=swap');
 
 /* END FONT FAMILY */
 
 /* GLOBAL CSS */
 html {
+    font-family: 'Raleway';
     font-size: 14px;
 }
 
@@ -46,7 +44,6 @@ body{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    font-family: 'Ralway', Arial, sans-serif;
 }
 
 /* GLOBAL CSS CLASS */
@@ -73,7 +70,6 @@ header{
    width :120px;
    padding-left:20px;
 }
-
 
 #main-nav ul{
     list-style: none;
@@ -152,7 +148,7 @@ main{
     background-color: #0065FC;
 }
 
-.search .search-icon{
+#search .search-icon{
     display:none;
 }
 
@@ -180,6 +176,11 @@ main{
     border-radius: 50px;
     font-weight: bold;
     margin-right: 20px;
+}
+
+.filter:hover {
+    box-shadow: 3px 3px 3px grey; 
+    cursor: pointer;
 }
 
 .filter a{
@@ -325,6 +326,9 @@ main{
     padding-bottom: 30px;
 }
 
+
+
+
 .populaire-card {
     width: 100%;
     display: flex;
@@ -347,6 +351,9 @@ main{
 .populaire-card-body{
     flex:6;
 }
+
+
+
 
 .populaire-card-body .note{
     position:absolute;
@@ -444,16 +451,12 @@ footer h2 {
     padding: 0 2%;
 }
 
-/* RESPONSIVE */
+/* -------- RESPONSIVE --------- */
 
-/* TABLETTES */
+/* -------- TABLETTES ------- */
 @media screen and (max-width: 992px)
 {
     /* SEARCH SECTION */ 
-
-    .search-icon{
-        display:none;
-    }
 
     .filter-container h2{
         width: 100%;
@@ -525,7 +528,7 @@ footer h2 {
 
 }
 
-/* MOBILE */
+/* --------- MOBILE ---------- */
 
 @media screen and (max-width: 768px)
 {
@@ -577,7 +580,7 @@ footer h2 {
         border-radius: 10px 0 0 10px;
     }
 
-    .search .search-icon{
+    #search .search-icon{
         display:block;
     }
 
